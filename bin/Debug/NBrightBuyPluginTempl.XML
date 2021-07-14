@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NBrightBuyDnnIdx</name>
+    </assembly>
+    <members>
+        <member name="T:Nevoweb.DNN.NBrightBuy.Providers.DnnIdxProvider">
+            <summary>
+            Implement DNN search Index
+            </summary>
+        </member>
+        <member name="M:Nevoweb.DNN.NBrightBuy.Providers.DnnIdxProvider.DoWork(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="portalfinfo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

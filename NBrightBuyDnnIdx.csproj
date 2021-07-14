@@ -10,14 +10,15 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NBrightBuyDnnIdx</RootNamespace>
     <AssemblyName>NBrightBuyDnnIdx</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,15 +27,27 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotNetNuke, Version=6.2.6.10, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Support\DNN7x\bin\DotNetNuke.dll</HintPath>
+    <Reference Include="DotNetNuke">
+      <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NBrightBuy">
+      <HintPath>..\..\..\bin\NBrightBuy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NBrightCore">
+      <HintPath>..\..\..\bin\NBrightCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NBrightDNN">
+      <HintPath>..\..\..\bin\NBrightDNN.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -59,30 +72,14 @@
     <None Include="Installation\NBrightBuyDnnIdx_Resource.zip" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Support\nbrightcore\NBrightCore.csproj">
-      <Project>{7b338113-6a9a-484d-a6c6-4d63fd5e58c6}</Project>
-      <Name>NBrightCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Support\nbrightdnn\NBrightDNN.csproj">
-      <Project>{ec815d38-62cf-4b46-8177-cf40ce1aab62}</Project>
-      <Name>NBrightDNN</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\nbrightbuy\NBrightBuy.csproj">
-      <Project>{8f850303-bec5-4247-9126-1e58f1402205}</Project>
-      <Name>NBrightBuy</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="App_LocalResources\" />
     <Folder Include="render\" />
     <Folder Include="Themes\config\default\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetFileName)" "..\..\..\..\..\bin\$(TargetFileName)"
-
-copy "$(AssemblyName).pdb" "..\..\..\..\..\bin\$(AssemblyName).pdb"
-</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

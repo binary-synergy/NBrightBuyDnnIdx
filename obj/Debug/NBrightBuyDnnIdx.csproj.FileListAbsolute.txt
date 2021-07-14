@@ -1,0 +1,10 @@
+D:\Dev\Websites\dev99.vjtech.co.uk\DesktopModules\NBright\NBrightBuyDnnIdx\obj\Debug\NBrightBuyDnnIdx.csproj.CoreCompileInputs.cache
+D:\Dev\Websites\dev99.vjtech.co.uk\DesktopModules\NBright\NBrightBuyDnnIdx\bin\Debug\NBrightBuyPluginTempl.XML
+D:\Dev\Websites\dev99.vjtech.co.uk\DesktopModules\NBright\NBrightBuyDnnIdx\bin\Debug\NBrightBuyDnnIdx.dll
+D:\Dev\Websites\dev99.vjtech.co.uk\DesktopModules\NBright\NBrightBuyDnnIdx\bin\Debug\NBrightBuyDnnIdx.pdb
+D:\Dev\Websites\dev99.vjtech.co.uk\DesktopModules\NBright\NBrightBuyDnnIdx\obj\Debug\NBrightBuyDnnIdx.dll
+D:\Dev\Websites\dev99.vjtech.co.uk\DesktopModules\NBright\NBrightBuyDnnIdx\obj\Debug\NBrightBuyDnnIdx.pdb
+D:\Dev\Websites\dev99.vjtech.co.uk\bin\NBrightBuyDnnIdx.dll
+D:\Dev\Websites\dev99.vjtech.co.uk\bin\NBrightBuyDnnIdx.pdb
+D:\Dev\Websites\dev99.vjtech.co.uk\bin\NBrightBuyPluginTempl.XML
+D:\Dev\Websites\dev99.vjtech.co.uk\DesktopModules\NBright\NBrightBuyDnnIdx\obj\Debug\NBrightBuyDnnIdx.csprojAssemblyReference.cache
